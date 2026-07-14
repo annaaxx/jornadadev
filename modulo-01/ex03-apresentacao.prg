@@ -1,17 +1,21 @@
 FUNCTION Main()
 
-    // Variav‚is
-    Local cNome := "Anna J£lia"
-    Local cCidade := "Sorocaba"
-    Local cCurso := "Harbour/ADVPL"
+    LOCAL cNome := "Anna J£lia"
+    LOCAL cCidade := "Sorocaba"
+    LOCAL cCurso := "Harbour/ADVPL"
 
-    // Exibir ficha de apresenta‡ao
+
+    CLEAR SCREEN
+
     QOut("================================")
     QOut("     FICHA DE APRESENTA€ÇO      ")
     QOut("================================")
     QOut("Nome: " + cNome)
     QOut("Cidade: " + cCidade)
     QOut("Curso: " + cCurso)
-    QOut("================================")    
+    QOut("================================")
+    QOut("")
 
-RETURN NIL      
+    WAIT "Pressione qualquer tecla para sair..."
+
+RETURN NIL
