@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "harbour-dbg",
+            "request": "launch",
+            "name": "Debug Aula 6",
+            "program": "${workspaceRoot}/_testes/aula6",
+            "workingDir": "${workspaceRoot}/_testes/",
+            "sourcePaths": [
+                "${workspaceRoot}/_testes"
+            ]
+        }
+    ]
+}

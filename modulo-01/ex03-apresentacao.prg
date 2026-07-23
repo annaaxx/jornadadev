@@ -1,9 +1,12 @@
+ REQUEST HB_CODEPAGE_PT850
+
 FUNCTION Main()
 
     LOCAL cNome := "Anna J£lia"
     LOCAL cCidade := "Sorocaba"
     LOCAL cCurso := "Harbour/ADVPL"
 
+HB_CDPSELECT("PT850")
 
     CLEAR SCREEN
 

@@ -1,17 +1,23 @@
-// ‚ a porta de entrada (pra iniciar o programa)
+REQUEST HB_CODEPAGE_PT850
+
+// ï¿½ a porta de entrada (pra iniciar o programa)
 FUNCTION Main()
 
-    // limpar o c¢digo (no sentido do terminal), tira tudo para "reiniciar" o c¢digo
+
+    // limpar o cï¿½digo (no sentido do terminal), tira tudo para "reiniciar" o cï¿½digo
     CLEAR SCREEN
 
-    // QOut ‚ a fun‡Æo que escreve na tela, o que estiver entre aspas ser  escrito. E ele tem uma quebra de linha autom tica, ou seja, ele pula uma linha depois de escrever.
-    QOut("Nome: Anna J£lia")
+    HB_CDPSELECT("PT850")
+
+
+    // QOut ï¿½ a funï¿½ï¿½o que escreve na tela, o que estiver entre aspas serï¿½ escrito. E ele tem uma quebra de linha automï¿½tica, ou seja, ele pula uma linha depois de escrever.
+    QOut("Nome: Anna Jï¿½lia")
     QOut("Cidade: Sorocaba")
     QOut("Pronta para aprender ADVPL!")
     QOut("") // Apenas pula uma linha
 
-    // esse WAIT ‚ uma fun‡Æo que faz o programa esperar at‚ que o usu rio pressione qualquer tecla para continuar.  £til para que o usu rio possa ler a mensagem antes do programa encerrar.
+    // esse WAIT ï¿½ uma funï¿½ï¿½o que faz o programa esperar atï¿½ que o usuï¿½rio pressione qualquer tecla para continuar. ï¿½ ï¿½til para que o usuï¿½rio possa ler a mensagem antes do programa encerrar.
     WAIT "Pressione qualquer tecla para sair..."
 
-// o RETURN NIL ‚ necess rio para finalizar a fun‡Æo Main, que ‚ a porta de entrada do programa. Sem ele, o programa nÆo saberia quando terminar. 
+// o RETURN NIL ï¿½ necessï¿½rio para finalizar a funï¿½ï¿½o Main, que ï¿½ a porta de entrada do programa. Sem ele, o programa nï¿½o saberia quando terminar. 
 RETURN NIL
