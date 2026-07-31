@@ -1,0 +1,17 @@
+# Projeto Protheus — Gestão de Contatos e Interações (SZ1 / SZ2)
+
+Detalhamento das Funções (Biblioteca `STTIPLIB.prw`)
+
+* **`u_NomeCliente(cCodigo)`**: Consulta a tabela `SZ1` e retorna o nome do contato formatado.
+* **`u_ProxCodigoSZ1()`**: Utiliza a função de numeração automática do Protheus (`GETSXENUM`) para gerar o próximo código de contato.
+* **`u_ProxSequenSZ2(cContato)`**: Calcula e incrementa sequencialmente as interações de um contato específico.
+* **`u_DescTipoInteracao(cTipo)`**: Mapeia o código da interação (`E`, `L`, `R`, `V`, `W`) para sua descrição amigável.
+
+Fluxo de Execução e Testes
+
+1. Executar a rotina de carga `U_CriaDicionario()` em ambiente de testes para inicializar as tabelas no banco de dados.
+2. Executar a rotina de Contatos via SmartClient ou Menu: **`U_STTIP003`**.
+3. Na tela de Contatos:
+   - Realizar o cadastro de contatos.
+   - Selecionar um contato na lista (`FWMBrowse`) e clicar no botão **Interações**.
+4. A tela **`U_STTIP004`** será aberta apresentando **exclusivamente** o histórico de interações pertencente ao contato selecionado na tela anterior.
